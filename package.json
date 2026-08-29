@@ -1,0 +1,20 @@
+{
+  "name": "ship-inspector-app",
+  "version": "1.0.0",
+  "description": "InspectBot - Ship Walkway Safety Inspection Chatbot (Claude-powered)",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "multer": "^2.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "uuid": "^9.0.1"
+  }
+}

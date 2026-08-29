@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: ship-inspector-app
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: CLAUDE_MODEL
+        value: claude-sonnet-5
+      - key: NODE_VERSION
+        value: 20.11.1
+    # NOTE: Persistent Disks are not supported on the Free instance type.
+    # If you upgrade to a paid plan (Starter or above), uncomment the block
+    # below to persist uploaded photos and .md logs across restarts:
+    #
+    # disk:
+    #   name: inspectbot-data
+    #   mountPath: /opt/render/project/src/data
+    #   sizeGB: 1
