@@ -2,6 +2,7 @@
 Interractive Ship Inspection &amp; Documentation Tester-1
 ## File Stucture 
 ship-inspector-app/                  ← repo root (Render's "Root Directory" points here)
+```
 │
 ├── package.json                     ← REQUIRED — tells Render how to install/run
 ├── package-lock.json                ← optional but recommended (commit if you have it locally)
@@ -22,3 +23,5 @@ ship-inspector-app/                  ← repo root (Render's "Root Directory" po
     │   └── .gitkeep                 ← placeholder so Git tracks the empty folder
     └── logs/
         └── .gitkeep                 ← placeholder so Git tracks the empty folder
+```
+
